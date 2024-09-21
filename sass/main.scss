@@ -1,0 +1,24 @@
+@import './reset';
+
+$primary-color: #222222;
+$background-color: #141414;
+
+#body {
+  width: 100vw;
+  height: 100vh;
+  background-color: $background-color;
+}
+
+#main-header {
+  background-color: $primary-color;
+  height: 48px;
+  width: 100vw;
+}
+
+#main-header-container {
+  display: flex;
+  flex-direction: row;
+  & > * {
+    height: 48px;
+  }
+}
