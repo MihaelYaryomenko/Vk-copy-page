@@ -8,12 +8,16 @@
 }
 
 body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   background-color: #141414;
 }
 
 #main-header {
+  position: fixed;
   box-shadow: 0px -6px 2px -6px rgba(186, 186, 186, 0.1) inset;
   display: flex;
   justify-content: center;
@@ -78,6 +82,7 @@ body {
   aspect-ratio: 1/1;
 }
 #bell-container:hover {
+  cursor: pointer;
   background-color: #333333;
 }
 
@@ -127,6 +132,7 @@ body {
   color: #939393;
 }
 #music-bar:hover {
+  cursor: pointer;
   background-color: #333333;
 }
 
@@ -143,8 +149,140 @@ body {
   aspect-ratio: 1/1;
 }
 #small-profile:hover {
+  cursor: pointer;
   background-color: #333333;
 }
 #small-profile svg {
   margin: 1px 0px 0px 6px;
+}
+
+#main-container {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 1106px;
+}
+
+#left-menu-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: calc(100vh - 48px);
+  width: 164px;
+}
+#left-menu-container .menu-element:first-child {
+  margin-top: 12px;
+}
+
+#secondary-main-container {
+  margin-left: 164px;
+  height: auto;
+  width: calc(100% - 164px);
+}
+
+.menu-element {
+  position: relative;
+  padding-left: 6px;
+  width: 164px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu-element:hover {
+  cursor: pointer;
+  background-color: #333333;
+  border-radius: 4px;
+}
+.menu-element p {
+  margin-left: 7px;
+  display: inline-block;
+  font-size: 10pt;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-weight: 300;
+  color: white;
+  transform: scale(0.95, 1);
+}
+
+.menu-notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 10px;
+  right: 6px;
+  height: 20px;
+  aspect-ratio: 1/1;
+  background-color: #747474;
+}
+.menu-notification p {
+  margin-left: 1px;
+  font-size: 9pt;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-weight: 300;
+  color: white;
+  transform: scale(1, 0.9);
+}
+
+.height-hr {
+  opacity: 0.8;
+  height: 1px;
+  color: #424242;
+}
+
+.menu-hr {
+  margin: 8px 0px 8px 36px;
+  width: 120px;
+}
+
+#main-profile-container {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 16px 0px 0px 7px;
+  width: 912px;
+  height: 347px;
+  border: #424242 1px solid;
+}
+#main-profile-container img:first-child {
+  position: absolute;
+  top: -12px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+
+#lower-profile {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 120px;
+  border-radius: 10px;
+  background-color: #222222;
+}
+#lower-profile img:first-child {
+  width: 158px;
+  height: 158px;
+  border-radius: 79px;
+  border: 4px #222222 solid;
+  position: absolute;
+  top: -78px;
+  left: 15px;
+}
+
+#green-dot {
+  position: absolute;
+  top: 42px;
+  left: 138px;
+  border-radius: 10px;
+  width: 20px;
+  aspect-ratio: 1/1;
+  background-color: #4bb34b;
+  border: 3px #222222 solid;
 }/*# sourceMappingURL=main.css.map */
