@@ -70,6 +70,7 @@ body {
 }
 
 #bell-container {
+  position: relative;
   margin-left: 15px;
   display: flex;
   justify-content: center;
@@ -78,6 +79,29 @@ body {
 }
 #bell-container:hover {
   background-color: #333333;
+}
+
+#notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff3347;
+  width: 25px;
+  height: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 6px;
+  right: 2px;
+  border: solid 2px #222222;
+}
+#notification p {
+  color: white;
+  font-size: 7pt;
+  margin: 0px 0px 2px 1px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-weight: 400;
+  transform: scale(1, 1.05);
 }
 
 .music-icon {
@@ -101,4 +125,26 @@ body {
   font-weight: 300;
   font-weight: 400;
   color: #939393;
+}
+#music-bar:hover {
+  background-color: #333333;
+}
+
+#small-profile {
+  margin-left: 217px;
+  display: flex;
+  height: 100%;
+  width: 68px;
+  justify-content: center;
+}
+#small-profile img {
+  border-radius: 16px;
+  height: 32px;
+  aspect-ratio: 1/1;
+}
+#small-profile:hover {
+  background-color: #333333;
+}
+#small-profile svg {
+  margin: 1px 0px 0px 6px;
 }/*# sourceMappingURL=main.css.map */
