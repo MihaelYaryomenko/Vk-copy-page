@@ -3,6 +3,7 @@
 $primary-color: #222222;
 $background-color: #141414;
 $grey-primary: #424242;
+$highlight-color: #333333;
 
 @mixin fonts() {
   font-family: 'Roboto', sans-serif;
@@ -74,5 +75,43 @@ body {
     display: flex;
     align-items: center;
     height: 48px;
+  }
+}
+
+#bell-container {
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  &:hover {
+    background-color: $highlight-color;
+  }
+}
+
+.music-icon {
+  margin: 0px 3px 0px 3px;
+}
+
+#music-bar {
+  display: flex;
+  width: 336px;
+  height: 100%;
+  & svg:first-child {
+    margin-left: 8px;
+  }
+  & p {
+    margin-left: 10px;
+    opacity: 0.9;
+    display: inline-block;
+    // -webkit-transform: scale(1, 1.05);
+    // -ms-transform: scale(1, 1.05);
+    // -o-transform: scale(1, 1.05);
+    // -moz-transform: scale(1, 1.05);
+    // transform: scale(1, 1.05);
+    font-size: 11pt;
+    @include fonts();
+    font-weight: 400;
+    color: #939393;
   }
 }

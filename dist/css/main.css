@@ -67,4 +67,38 @@ body {
   display: flex;
   align-items: center;
   height: 48px;
+}
+
+#bell-container {
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+}
+#bell-container:hover {
+  background-color: #333333;
+}
+
+.music-icon {
+  margin: 0px 3px 0px 3px;
+}
+
+#music-bar {
+  display: flex;
+  width: 336px;
+  height: 100%;
+}
+#music-bar svg:first-child {
+  margin-left: 8px;
+}
+#music-bar p {
+  margin-left: 10px;
+  opacity: 0.9;
+  display: inline-block;
+  font-size: 11pt;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-weight: 400;
+  color: #939393;
 }/*# sourceMappingURL=main.css.map */
