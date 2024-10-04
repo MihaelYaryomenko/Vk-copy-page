@@ -12,6 +12,12 @@ $green-color: #4bb34b;
   font-weight: 300;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -421,7 +427,7 @@ body {
 }
 
 #multimedia-container {
-  width: 552px;
+  width: 100%;
   height: 438px;
   border-radius: 10px;
   background-color: $primary-color;
@@ -488,29 +494,29 @@ body {
   border: $grey-primary 1px solid;
 }
 
-#new-container {
-  width: 554px;
-  height: 55px;
-  border-radius: 10px;
-  margin-top: 15px;
-  background-color: $primary-color;
-  border: $grey-primary 1px solid;
-}
+// #new-container {
+//   width: 100%;
+//   height: 55px;
+//   border-radius: 10px;
+//   margin-top: 15px;
+//   background-color: $primary-color;
+//   border: $grey-primary 1px solid;
+// }
 
-#gifts {
-  width: 344px;
-  height: 153px;
-  border-radius: 10px;
-  margin-top: 15px;
-  background-color: $primary-color;
-  border: $grey-primary 1px solid;
-}
+// #gifts {
+//   width: 100%;
+//   height: 153px;
+//   border-radius: 10px;
+//   margin-top: 15px;
+//   background-color: $primary-color;
+//   border: $grey-primary 1px solid;
+// }
 
-#pubs {
-  width: 346px;
-  height: 355px;
-  border-radius: 10px;
-  margin-top: 15px;
-  background-color: $primary-color;
-  border: $grey-primary 1px solid;
-}
+// #pubs {
+//   width: 346px;
+//   height: 355px;
+//   border-radius: 10px;
+//   margin-top: 15px;
+//   background-color: $primary-color;
+//   border: $grey-primary 1px solid;
+// }

@@ -7,6 +7,12 @@
   vertical-align: baseline;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -407,7 +413,7 @@ body {
 }
 
 #multimedia-container {
-  width: 552px;
+  width: 100%;
   height: 438px;
   border-radius: 10px;
   background-color: #222222;
@@ -470,33 +476,6 @@ body {
 #friend-container {
   width: 345px;
   height: 313px;
-  border-radius: 10px;
-  margin-top: 15px;
-  background-color: #222222;
-  border: #424242 1px solid;
-}
-
-#new-container {
-  width: 554px;
-  height: 55px;
-  border-radius: 10px;
-  margin-top: 15px;
-  background-color: #222222;
-  border: #424242 1px solid;
-}
-
-#gifts {
-  width: 344px;
-  height: 153px;
-  border-radius: 10px;
-  margin-top: 15px;
-  background-color: #222222;
-  border: #424242 1px solid;
-}
-
-#pubs {
-  width: 346px;
-  height: 355px;
   border-radius: 10px;
   margin-top: 15px;
   background-color: #222222;
