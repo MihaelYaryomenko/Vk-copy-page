@@ -246,16 +246,28 @@ body {
   border-radius: 12px;
   margin: 16px 0px 0px 7px;
   width: 912px;
-  height: 347px;
+  height: 352px;
   border: #424242 1px solid;
 }
-#main-profile-container img:first-child {
+#main-profile-container #not-my-photo {
   position: absolute;
   top: -12px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 250px;
+}
+
+.inline {
+  display: inline-block;
+}
+
+#something {
+  display: flex;
+  flex-direction: row;
+}
+#something img {
+  margin-left: 4px;
 }
 
 #lower-profile {
@@ -266,7 +278,7 @@ body {
   border-radius: 10px;
   background-color: #222222;
 }
-#lower-profile img:first-child {
+#lower-profile #my-photo {
   width: 158px;
   height: 158px;
   border-radius: 79px;
@@ -285,4 +297,97 @@ body {
   aspect-ratio: 1/1;
   background-color: #4bb34b;
   border: 3px #222222 solid;
+}
+
+.redact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  border-radius: 8px;
+  background-color: #393939;
+  padding: 7px 15px 7px 15px;
+}
+.redact p {
+  margin-left: 1px;
+  font-size: 11pt;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-weight: 300;
+  color: white;
+  transform: scale(0.97, 0.97);
+}
+.redact svg {
+  margin: 0px 1px 0px 7px;
+}
+.redact:hover {
+  cursor: pointer;
+}
+
+#redact-buttons {
+  margin: 20px 15px 0px 0px;
+  right: 1px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+#redact-buttons .redact:first-child {
+  margin-right: 8px;
+}
+
+#name-container {
+  position: absolute;
+  top: 20px;
+  left: 180px;
+  width: 300px;
+  height: 80px;
+}
+
+#name {
+  display: flex;
+  flex-direction: column;
+}
+#name h1 {
+  letter-spacing: 1px;
+  font-size: 16pt;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-weight: 600;
+  color: #e1e3e6;
+  transform: scale(0.97, 0.97);
+}
+
+#goggins-paragraph {
+  margin-top: 4px;
+  font-size: 10pt;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-weight: 300;
+  color: white;
+  transform: scale(0.97, 0.97);
+}
+
+#bio-container {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#bio-container p {
+  margin-right: 6px;
+  font-size: 10pt;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-weight: 300;
+  color: #939393;
+  transform: scale(0.97, 0.97);
+}
+#bio-container p:hover {
+  cursor: pointer;
+}
+#bio-container img {
+  margin: 0px 2px 0px 2px;
+  height: 20px;
+  width: 20px;
 }/*# sourceMappingURL=main.css.map */
