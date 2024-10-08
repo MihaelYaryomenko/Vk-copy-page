@@ -218,7 +218,7 @@ body {
     border-radius: 4px;
   }
   & p {
-    margin-left: 7px;
+    margin-left: 8px;
     display: inline-block;
     font-size: 10pt;
     @include fonts();
@@ -248,12 +248,12 @@ body {
   right: 6px;
   height: 20px;
   aspect-ratio: 1 / 1;
-  background-color: #747474;
+  background-color: #828282;
   & p {
-    margin-left: 1px;
+    margin-left: 2px;
     font-size: 9pt;
     @include fonts();
-    font-weight: 300;
+    font-weight: 500;
     color: white;
     transform: scale(1, 0.9);
   }
@@ -262,11 +262,11 @@ body {
 .height-hr {
   opacity: 0.8;
   height: 1px;
-  color: $grey-primary;
+  color: #363636;
 }
 
 .menu-hr {
-  margin: 8px 0px 8px 36px;
+  margin: 9px 0px 8px 36px;
   width: 120px;
 }
 
@@ -279,7 +279,7 @@ body {
   margin: 16px 0px 0px 7px;
   width: 912px;
   height: 352px;
-  border: $grey-primary 1px solid;
+  border: #363636 1px solid;
   & #not-my-photo {
     position: absolute;
     top: -12px;
@@ -422,20 +422,23 @@ body {
 
 #left-container {
   width: 552px;
-  margin: 15px 15px 0px 7px;
+  margin: 0px 15px 0px 7px;
   height: auto;
 }
 
 #multimedia-container {
   width: 100%;
   height: 438px;
-  border-radius: 10px;
+}
+
+.border-block {
+  margin-top: 15px;
+  border-radius: 12px;
   background-color: $primary-color;
-  border: $grey-primary 1px solid;
+  border: #363636 1px solid;
 }
 
 #right-container {
-  margin-top: 15px;
   width: 346px;
   height: auto;
 }
@@ -446,9 +449,6 @@ body {
   align-items: center;
   height: 90px;
   width: 346px;
-  border-radius: 10px;
-  background-color: $primary-color;
-  border: $grey-primary 1px solid;
   & img:first-child {
     margin-left: 17px;
   }
@@ -489,34 +489,19 @@ body {
   width: 345px;
   height: 313px;
   border-radius: 10px;
-  margin-top: 15px;
-  background-color: $primary-color;
-  border: $grey-primary 1px solid;
 }
 
 #new-container {
   width: 100%;
   height: 55px;
-  border-radius: 10px;
-  margin-top: 15px;
-  background-color: $primary-color;
-  border: $grey-primary 1px solid;
 }
 
-// #gifts {
-//   width: 100%;
-//   height: 153px;
-//   border-radius: 10px;
-//   margin-top: 15px;
-//   background-color: $primary-color;
-//   border: $grey-primary 1px solid;
-// }
+#gifts {
+  width: 100%;
+  height: 151px;
+}
 
-// #pubs {
-//   width: 346px;
-//   height: 355px;
-//   border-radius: 10px;
-//   margin-top: 15px;
-//   background-color: $primary-color;
-//   border: $grey-primary 1px solid;
-// }
+#pubs {
+  width: 346px;
+  height: 355px;
+}
